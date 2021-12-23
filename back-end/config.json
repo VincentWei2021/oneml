@@ -1,0 +1,30 @@
+{
+	"variables":{
+		"labelCol":"survived",
+		"textCol":[],
+		"numericalCol":["Age","Fare"],
+		"categoricalCol":["Sex"]
+	},
+	"dataLoader":{
+		"format":"csv",
+		"path":"train_and_test2.csv"
+	},
+	"sampling":{
+		"ratio":[0.2,0.8],
+		"sampling_step" : {
+			"option" : "hard_limit",
+			"limit_size" : 1000
+		}
+	},
+	"preprocessing":{
+		"steps" : 
+			{
+				"normalization" : "Fare"
+			}
+		
+	},
+	"featureGeneration":{},
+	"mlAlgorithm":"Logistic_Regression",
+	"metrics":["accuracy"],
+	"steps":["dataLoader","sampling","preprocessing","mAlgorithm"]
+}
