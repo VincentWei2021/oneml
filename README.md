@@ -12,9 +12,9 @@ Developed in Pyspark 3.2.0
 * Setup:
 	* Create a VM instance on GCPpython3 templates/server.py
 	* clone the github repo
- 	* python3 templates/server.py. This starts the flask application on the VM
-   * Get the Publiic URL of the machine from the VM dashboard
-   * The application can be accessed from: https:<url>:8111/
+ 	* ```python3 templates/server.py```. This starts the flask application on the VM
+   	* Get the Publiic URL of the machine from the VM dashboard
+   	* The application can be accessed from: ```https:<url>:8111/```
      
  **BackEnd:**
  * ```spark-submit main_file.py --configpath config.json```
